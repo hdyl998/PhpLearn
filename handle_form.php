@@ -9,11 +9,11 @@
 
             <?php
             ini_set('display_errors', 1);
-            error_reporting(0);//全部错误不报告
-            error_reporting(E_ALL);//报告全部错误
-            error_reporting(E_ALL&~E_NOTICE);//全部错误除了通知类型
-            
-            error_reporting(E_ALL|E_STRICT);//显示有有可能出现的问题！
+//            error_reporting(0);//全部错误不报告
+//            error_reporting(E_ALL);//报告全部错误
+//            error_reporting(E_ALL&~E_NOTICE);//全部错误除了通知类型
+//            
+//            error_reporting(E_ALL|E_STRICT);//显示有有可能出现的问题！
             ?>
             <?php
             $title = $_POST['title'];
