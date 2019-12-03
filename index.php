@@ -16,7 +16,9 @@ and open the template in the editor.
             <li><a href="hello.php?name=test3&age=3">Test3</a></li>
             <li><a href="hello.php?name=test4&age=4">Test4</a></li>
         </ul>
+
         <form action="handle_form.php" method="post">
+
             <p>Name:
                 <select name="title">
 
@@ -26,6 +28,7 @@ and open the template in the editor.
                 </select>
                 <input type="text" name="name" size="20" />
             </p>   
+       
 
             <p>Email Address:<input type="text" name="email" size="20"></p>
 
@@ -39,6 +42,8 @@ and open the template in the editor.
 
             <input type="submit" name="submit" value="Send My Feedback" />
         </form>
+        
+   
 
 
         <form action="handle_calc.php" method="post">
