@@ -11,13 +11,17 @@
     <body
 
         >
+        
+        <?php
+           function pintText($text) {
+            print "<p class=\"error\">$text</p>";
+        }
+        ?>
 
         <h1>Registeration Results</h1>
         <?php
 
-        function pintText($text) {
-            print "<p class=\"error\">$text</p>";
-        }
+
 
         $okay = true;
         if (empty($_POST['email'])) {

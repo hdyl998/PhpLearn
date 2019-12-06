@@ -28,7 +28,7 @@ and open the template in the editor.
                 </select>
                 <input type="text" name="name" size="20" />
             </p>   
-       
+
 
             <p>Email Address:<input type="text" name="email" size="20"></p>
 
@@ -38,12 +38,17 @@ and open the template in the editor.
                 <input type="radio" name="response" value="okey" />okey
                 <input type="radio" name="response" value="boring" />boring
             </p>
-            <p>Comments:<textarea name="comments" rows="5" cols="30"></textarea></p>
+            <p>Comments:<textarea name="comments" rows="5" cols="30">please set</textarea></p>
 
             <input type="submit" name="submit" value="Send My Feedback" />
         </form>
-        
-   
+
+
+        <?php
+        $arr = array('tt' => "88545", 'bb' => "cccc");
+        var_dump($arr);
+        ?>
+
 
 
         <form action="handle_calc.php" method="post">
@@ -54,9 +59,9 @@ and open the template in the editor.
             <p>Tax:<input type="text" name="tax" size="3"/>(%)</p>
 
             <p>Shipping method:<select name="shipping">
-                    <option  value="5.00">Slow and steady</option>
+                    <option  value="5.00" >Slow and steady</option>
                     <option  value="8.95">Put a move on it.</option>  
-                    <option  value="19.36">I need it yesterday!</option>  
+                    <option  value="19.36"  selected="selected">I need it yesterday!</option>  
                 </select></p>
 
             <p>Number of payments to make:<input type="text" name="payments" size="3"/></p>
@@ -89,18 +94,18 @@ and open the template in the editor.
                 <select name="month">
                     <option value="">Select One</option>
                     <?php
-                        for($i=1;$i<13;$i++){
-                            print "<option value='$i'>$i</option>";
-                        }
+                    for ($i = 1; $i < 13; $i++) {
+                        print "<option value='$i'>$i</option>";
+                    }
                     ?>
-                    
+
                 </select>
-                
+
             </p>
-            
+
             <p>
-             <input
-                    type="checkbox" value="Yes" name="terms"
+                <input
+                    type="checkbox" value="Yes" name="terms" checked="checked"
                     />
                 I agree to the terms
             </p>
@@ -147,7 +152,7 @@ and open the template in the editor.
 
         print "-----------<br/>" . strpos("AaaaaabbbA", "b");
 
-        print "-----------<br/>" . str_replace("AaaaaabbbA", "b");
+        print "-----------<br/>" . str_replace("A", "替换的", "AaaaaabbbA");
 
         $varfff = 'something';
         if (isset($varfff, $varfff2)) {
