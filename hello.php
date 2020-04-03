@@ -13,5 +13,6 @@ printf("<p>Hello,<span style=\"font-weight:bold;\">$name</span></p>");
  * and open the template in the editor.
  */ 
 
+number_format($number, $decimals)
 ?>
 
